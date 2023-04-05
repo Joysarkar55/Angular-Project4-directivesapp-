@@ -1,0 +1,15 @@
+<div>
+    <span *ngFor="let i of number">
+    <span *ngIf="i%2==0;then c1 else c2">
+       Condition is valid
+    </span>
+    <ng-template #c1>
+        {{i}} is even 
+        <br>
+    </ng-template>
+    <ng-template #c2>
+        {{i}} is odd
+        <br>
+    </ng-template>
+</span>
+  </div>
